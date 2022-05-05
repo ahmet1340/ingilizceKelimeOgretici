@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_back"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="Seviye Ingilizce"
+                android:textAlignment="center"
+                android:textColor="@android:color/background_light"
+                android:textSize="70sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <TextSwitcher
+                android:id="@+id/kayanYazi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right">
+
+            </TextSwitcher>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonbasla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginRight="30px"
+                android:background="@drawable/anasayfabtn"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="Basla"
+                android:textColor="#333333"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttonBildiklerim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30px"
+                android:background="@drawable/anasayfabtn2"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="Bildiklerim"
+                android:textColor="#333333"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/buttoncikis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30px"
+                android:background="@drawable/anasayfabtn2"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="Oyundan Çık"
+                android:textColor="#333333"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
